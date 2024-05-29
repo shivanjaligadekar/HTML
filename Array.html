@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[];
+        // arr[0]=100;
+        // arr[1]="CDAC";
+        // arr[2]=true;
+        // arr[10]=false;
+        // console.log(arr);
+
+        // const arr2=["sachin","mumbai",40];
+        // console.log(arr2);
+
+        const arr3=new Array("raj","mumbai",30);
+        console.log(arr3);
+
+        arr3.push(true);
+        console.log(arr3);
+        
+        var a=arr3.pop();
+        console.log("daleted"+a);
+        console.log(arr3);
+
+        arr3.unshift("cricket");
+        console.log(arr3);
+
+        a=arr3.shift();
+        console.log("deleted:"+a);
+        console.log(arr3);
+
+        arr3.push(100);
+        arr3.push("ODI");
+        console.log(arr3);
+        
+        var b=arr3.slice(0,3);
+        console.log(b);
+        console.log(arr3);
+
+        const cars=["i20","jaguar","omini","creta"];
+        cars.splice(2,0,"audi","breeza");
+        console.log(cars);
+
+        cars.splice(cars.length,0,"ennova","maruti")
+        console.log(cars);
+
+        cars.splice(2,2);
+        console.log(cars);
+
+
+        cars.splice(0,cars.length,"punch","lambo","benz");
+        console.log(cars);
+
+        delete cars[1];
+        console.log(cars);
+
+        const bikes=["pulser","apache","splender"];
+        let vehicals=cars.concat(bikes);
+        console.log(vehicals);
+
+        console.log(vehicals.sort());
+
+        // const num1=[10,90,80,50,30,20,60];
+        const num1=[1000,9000,8000,5000,3000,2000,6000,99,40,100,22];
+        console.log(num1.sort());
+        console.log(num1.reverse());
+        // console.log("original")
+        
+        //Ascending order
+        num1.sort(function(a,b){
+            return a-b;
+        });
+        console.log("sorted:"+num1);
+
+        //descending order
+        num1.sort(function(a,b){
+            return b-a;
+        });
+        console.log("sorted:"+num1);
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.logo {
+    background-color: antiquewhite;
+  }
+  .aside-list li {
+    list-style-type: none !important;
+  }
+  .foot{
+      background-color: cornflowerblue;
+      height: 70px;
+  }
+  .foot row{
+      text-align: center;
+  }

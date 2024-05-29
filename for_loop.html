@@ -1,0 +1,34 @@
+<script>
+    const vehicals = ["car","bus","truct","train"];
+    
+    const contries=[
+        {
+            India:"Delhi"
+        },
+        {
+            USA:"washington"
+        },
+        {
+            Russia:"Moscow"
+        },
+    ]
+    
+    for (var i = 0; i < vehicals.length; i++){
+        console.log(vehicals[i]);
+    }
+    for(const i in vehicals){
+        console.log(i);
+    }
+
+    for(const key in contries){
+        console.log(key);
+    }
+
+    for(const i of vehicals){
+        console.log(i);
+    }
+    // for(const key of contries){
+    //     console.log(key);
+    // }
+    contries.forEach(contry=>console.log(contry));
+</script>
